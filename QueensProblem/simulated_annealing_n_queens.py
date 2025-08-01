@@ -62,11 +62,11 @@ def solve(n, max_iterations=1000000, initial_temp=1000, cooling_rate=0.999):
         if temperature < 1e-10:
             break
 
-    return None  # Failed to find a solution
+    return None 
 
 
 if __name__ == "__main__":
-    N = 100 # Change this to 10, 30, 50, or 200 as needed
+    N = 100 #  Change value of N for board size
 
     print(f"Running Simulated Annealing for N = {N}")
     tracemalloc.start()
