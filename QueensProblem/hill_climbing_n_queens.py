@@ -44,11 +44,11 @@ def solve(n, max_steps=100000):
 
         board[row] = random.choice(best_cols)
 
-    return None  # Failed to find a solution
+    return None
 
 
 if __name__ == "__main__":
-    N = 50  # Change this to 30, 50, 100, or 200 as needed
+    N = 50  # Change value of N for board size
 
     print(f"Running Min-Conflicts Hill Climbing for N = {N}")
     tracemalloc.start()
